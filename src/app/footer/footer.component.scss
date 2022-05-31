@@ -1,0 +1,54 @@
+$darkBlue : #0C0C5D ;
+$blue : #2221a3;
+$orange : #e87100;
+$black : #000000;
+$white : #ffffff;
+$minRadius : 10px;
+$maxRadius : 20px;
+
+.foot{
+
+    align-self: flex-end;
+    z-index: 8;
+    height: 8%;
+    min-height: 8%;
+    width: 100%;
+    min-width: 100%;
+    font-style: italic;
+    color: $darkBlue;
+
+    z-index: 2;
+
+    border-top: solid 1px;
+    border-color: $darkBlue;
+
+    background-color: $orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 2px 0px 6px $black ;
+}
+
+.sources{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+
+.reseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}

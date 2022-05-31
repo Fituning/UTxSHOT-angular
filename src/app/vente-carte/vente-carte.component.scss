@@ -1,0 +1,121 @@
+$darkBlue : #0C0C5D ;
+$blue : #2221a3;
+$orange : #e87100;
+$black : #000000;
+$white : #ffffff;
+$minRadius : 10px;
+$maxRadius : 20px;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 15rem;
+    height: 26rem;
+    margin: 0px;
+    margin-bottom: 2em;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    border: solid 2px $blue;
+    border-radius: $maxRadius;
+
+    color: $blue;
+    box-shadow: 1px -1px 8px $black ;
+
+    padding-top: 0.5em;
+
+    &:hover{
+        border-color: $orange;
+    }
+}
+
+
+img{
+    box-sizing: border-box;
+
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.images{
+    height: 9em;
+    min-height: 9em;
+
+    width: 95%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.titre{
+    font-weight: bold;
+    font-size:auto;
+    text-align: center;
+    
+    box-sizing: border-box;
+
+    width: 100%;
+    max-height: 4em;
+    border-bottom: solid 2px $orange;
+    overflow: hidden;
+}
+
+.description{
+    font-weight: bold;
+    font-size:auto;
+    text-align: center;
+    
+    box-sizing: border-box;
+
+
+    width: 100%;
+    max-height: 6.5em;
+    border-bottom: double 2px $blue;
+    overflow: auto;
+}
+
+.etat{
+    font-weight: bold;
+    font-size:auto;
+    text-align: center;
+    
+    box-sizing: border-box;
+
+    width: 100%;
+    max-height: 5.5em;
+    border-bottom: double 2px $blue;
+}
+
+.vendeur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: bold;
+    font-size:auto;
+    text-align: center;
+
+    box-sizing: border-box;
+
+    width: 100%;
+    max-height: 3em;
+}
+
+.prix{
+    font-weight: bold;
+    font-size: 2em;
+    color: $orange;
+}
+
+p{
+    margin: 0px;
+}

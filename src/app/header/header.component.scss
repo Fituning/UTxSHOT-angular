@@ -7,6 +7,9 @@ $minRadius : 10px;
 $maxRadius : 20px;
 
 .headbar{
+    position: fixed;
+    top : 0px;
+    z-index: 10;
 
     display: flex;
     flex-direction: column;
@@ -20,6 +23,7 @@ $maxRadius : 20px;
     box-sizing: border-box;
 
     color: $white;
+
 }
 
 
@@ -27,7 +31,7 @@ $maxRadius : 20px;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     box-sizing: border-box;
@@ -35,6 +39,16 @@ $maxRadius : 20px;
     background-color: $darkBlue;
     border-bottom: solid 2px $orange;
     box-shadow: #000000;
+}
+
+.sdiv{
+    width: 33%!important;
+    max-height: 33%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-bar{
@@ -48,12 +62,15 @@ $maxRadius : 20px;
     top : -2px;
     margin: 0px;
     box-sizing: border-box;
-    width: 80%;
+    margin-left: 10% ;
+    width: 90%;
+    padding-right: 10%!important;
+
     background-color: $darkBlue;
     border: solid 2px $orange;
+    border-right: 0px;
     border-top: 0px;
     border-bottom-left-radius: $maxRadius;
-    border-bottom-right-radius: $maxRadius;
 
     padding: 0.3em;
 }
@@ -119,6 +136,10 @@ img{
     height: 2em;
     width: 10%;
     max-height: 100%;
+    box-shadow: 0px 0px 0px $orange;
+    &:hover{
+        top : 0px
+    }
 }
 
 input{
@@ -129,7 +150,28 @@ input{
 button{
     background-color: $orange;
     color : $black;
-    border : solid 1px $blue;
+    border : solid 0px $blue;
     border-radius: $minRadius;
     min-width: 10%;
+
+    box-shadow: 0px 0px 8px $orange;
+
+    &:hover{
+        position:relative;
+        top : -4px
+    }
+}
+
+.login-btn{
+    background-color: $blue;
+    color : $white;
+    border : solid 0px $blue;
+    border-radius: $minRadius;
+    min-width: 60%;
+
+    box-shadow: 0px 0px 8px $black;
+
+    &:hover{
+        border : solid 1px $white;
+    }
 }

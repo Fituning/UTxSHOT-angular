@@ -4,3 +4,20 @@ $blue : #2221a3;
 $orange : #e87100;
 $black : #000000;
 $white : #ffffff;
+
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: $orange; /* color of the tracking area */
+    margin-top: 200%;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $darkBlue ; /* color of the scroll thumb */
+    border-radius: 3px; /* roundness of the scroll thumb */
+    border: 1px solid $orange; /* creates padding around scroll thumb */
+}
+
+
