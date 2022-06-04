@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { WikishotComponent } from './wikishot/wikishot.component';
 import { LieuxComponent } from './lieux/lieux.component';
 import { PartiesComponent } from './parties/parties.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { ConnectionComponent } from './connection/connection.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PartiesComponent } from './parties/parties.component';
     HomeComponent,
     WikishotComponent,
     LieuxComponent,
-    PartiesComponent
+    PartiesComponent,
+    InscriptionComponent,
+    ConnectionComponent
   ],
   imports: [
     BrowserModule,
