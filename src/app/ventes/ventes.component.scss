@@ -42,7 +42,7 @@ $maxRadius : 20px;
     height: 32em;
     margin: 0px;
     padding: 0px;
-    padding-top: 4em;
+    padding-top: 5.5em;
     min-height: 100%;
 
     color: $white;
@@ -70,5 +70,28 @@ $maxRadius : 20px;
     height: 100%;
 
     color: $blue;
+}
+
+.filtre-btn{
+    width: 100%;
+    margin: 0px;
+
+    border:0px ;
+
+    
+    width: 100%;
+    background: none;
+    color: $white;
+
+    
+}
+
+.filtre{
+
+    border-top: solid 1px $orange;
+    width: 100%;
+    color: white;
+    font-style: normal;
+    background: linear-gradient($blue, $darkBlue);
 }
 
