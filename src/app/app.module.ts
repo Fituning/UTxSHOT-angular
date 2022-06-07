@@ -14,6 +14,7 @@ import { PartiesComponent } from './parties/parties.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { ArticleService } from './services/article.service';
+import { VenteDetailComponent } from './vente-detail/vente-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ArticleService } from './services/article.service';
     LieuxComponent,
     PartiesComponent,
     InscriptionComponent,
-    ConnectionComponent
+    ConnectionComponent,
+    VenteDetailComponent
   ],
   imports: [
     BrowserModule,

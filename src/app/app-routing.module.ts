@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { LieuxComponent } from './lieux/lieux.component';
 import { PartiesComponent } from './parties/parties.component';
+import { VenteDetailComponent } from './vente-detail/vente-detail.component';
 import { VentesComponent } from './ventes/ventes.component';
 import { WikishotComponent } from './wikishot/wikishot.component';
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:'lieux', component: LieuxComponent},
   {path:'parties', component: PartiesComponent},
   {path:'connection', component:ConnectionComponent},
-  {path:'inscription', component:InscriptionComponent}
+  {path:'inscription', component:InscriptionComponent},
+  {path: 'article/:id', component: VenteDetailComponent }
   ];
 
 @NgModule({

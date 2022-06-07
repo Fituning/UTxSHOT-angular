@@ -1,7 +1,10 @@
 <nav class = headbar>
     <div class = "head-div">
         <section class = "sdiv">
-            <p> </p>
+            <div class = "search">
+                <input  class ="searchInput" type="search" placeholder="recherche" aria-label="Search">
+                <button class ="searchButton"  type="submit"> Q</button>
+            </div>
         </section>
         <section class = "sdiv">
             <img src="../../assets/files/img/logo_UTxShot.png" alt="" [routerLink]="['']" >
@@ -13,10 +16,6 @@
     <div class = "nav-bar">
         <button [routerLink]="['/lieux']"> Lieux </button>
         <button [routerLink]="['/parties']"> Parties </button>
-        <div class = "search">
-            <input  class ="searchInput" type="search" placeholder="Search" aria-label="Search">
-            <button class ="searchButton"  type="submit"> Q</button>
-        </div>
         <button [routerLink]="['/ventes']"> Ventes </button>
         <button [routerLink]="['/wikishot']"> WikiShot </button>
     </div>
