@@ -13,6 +13,7 @@ import { LieuxComponent } from './lieux/lieux.component';
 import { PartiesComponent } from './parties/parties.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnectionComponent } from './connection/connection.component';
+import { ArticleService } from './services/article.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { ConnectionComponent } from './connection/connection.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ArticleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
