@@ -14,7 +14,6 @@ export class ArticleService {
     this.Array = [];
     this.Array.push(new Article(0,
                       "x-shot bateuse",
-                      "../../assets/files/img/81W19bSDF2S._AC_SL1500_.jpg",
                       new Date(),
                       /*new User(),*/
                       60,
@@ -24,11 +23,11 @@ export class ArticleService {
                       "correct",
                       false,
                       48,
-                      32.52
+                      32.52,
+                      ["../../assets/files/img/81W19bSDF2S._AC_SL1500_.jpg","../../assets/files/img/images.jpg"]
                     ))
     this.Array.push(new Article(1,
                     "x-shot sniper",
-                    "../../assets/files/img/images.jpg",
                     new Date(),
                     /*new User(),*/
                     80,
@@ -38,7 +37,8 @@ export class ArticleService {
                     "correct",
                     true,
                     48,
-                    14.98
+                    14.98,
+                    ["../../assets/files/img/images.jpg","../../assets/files/img/images.jpg","../../assets/files/img/images.jpg","../../assets/files/img/images.jpg"]
                   ))
     return this.Array
   }

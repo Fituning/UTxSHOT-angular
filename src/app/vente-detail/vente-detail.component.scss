@@ -1,0 +1,39 @@
+$darkBlue : #0C0C5D ;
+$blue : #2221a3;
+$orange : #e87100;
+$black : #000000;
+$white : #ffffff;
+$minRadius : 10px;
+$maxRadius : 20px;
+*{
+    color: #000000;
+}
+
+.body-section{
+    
+    width: 100%;
+    min-height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detail{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $white;
+    width: 80%;
+    min-height: 35em;
+    box-shadow: 0px -2px 12px 2px $black ;
+
+}
+
+img{
+    max-width: 15em;
+    max-height: 15em;
+}

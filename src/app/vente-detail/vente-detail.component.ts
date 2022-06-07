@@ -19,4 +19,18 @@ export class VenteDetailComponent implements OnInit {
     
   }
 
+  otherImage(nb :number){
+    if(this.article.image[nb] == null){
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+  nbImage() : number{
+    return this.article.image.length
+    
+  }
+
+
 }

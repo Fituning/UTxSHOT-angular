@@ -1,4 +1,4 @@
-<div class = "card">
+<!-- <div class = "card">
     <div class = "images">
       <img src="{{article.image1}}" alt="...">
     </div>
@@ -20,4 +20,36 @@
       <p class = 'prix'> {{article.prix}}€ </p>
       <p> note vendeur :</p>
     </div>
-</div>
+</div> -->
+
+<section class= "body-section">
+    <div class = "detail">
+        <div *ngIf="nbImage()>1;else uniqueImage" id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button *ngFor="let productVar of article.image" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="productVar" class="active" aria-current="true" aria-label="Slide 1"></button>
+            </div> 
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="{{article.image[0]}}" class="d-block w-100" alt="...">
+              </div>
+              <div *ngIf="otherImage(1)" class="carousel-item" data-bs-interval="2000">
+                <img src="{{article.image[1]}}" class="d-block w-100" alt="...">
+              </div>
+              <div  *ngIf="otherImage(2)" class="carousel-item">
+                <img src="{{article.image[2]}}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <ng-template #uniqueImage>
+            <img src="{{article.image[0]}}"  alt="...">
+        </ng-template>
+    </div>
+</section>

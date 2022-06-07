@@ -4,9 +4,7 @@ export class Article {
     id : number;
     titre: string;
     createdDate: Date;
-    image1: string;
-    image2: string;
-    image3: string;
+    image: string[];
     //vendeur : User;
 
     taille :number;
@@ -18,12 +16,10 @@ export class Article {
     munitions : number;
     prix : number;
     
-    constructor(id : number, title: string, imageUrl: string, createdDate: Date, /*user : User,*/taille : number, puissance : number,viseur : boolean,cap_chargeur : number,etat : string,custom : boolean,munitions : number,prix : number) {
+    constructor(id : number, title: string , createdDate: Date, /*user : User,*/taille : number, puissance : number,viseur : boolean,cap_chargeur : number,etat : string,custom : boolean,munitions : number,prix : number, image1: string[]) {
         this.id = id; 
         this.titre = title;
-        this.image1 = imageUrl;
-        this.image2 = imageUrl;
-        this.image3 = imageUrl;
+        this.image = image1;
         this.createdDate = createdDate;
         //this.vendeur = user;
         this.taille = taille;

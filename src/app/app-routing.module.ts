@@ -11,7 +11,10 @@ import { WikishotComponent } from './wikishot/wikishot.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'ventes', component: VentesComponent},
+  {path:'ventes',component: VentesComponent,
+    children : [
+    ]
+  },
   {path:'wikishot', component: WikishotComponent},
   {path:'lieux', component: LieuxComponent},
   {path:'parties', component: PartiesComponent},
