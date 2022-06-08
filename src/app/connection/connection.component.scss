@@ -1,10 +1,11 @@
-$darkBlue : #0C0C5D ;
-$blue : #2221a3;
-$orange : #e87100;
-$black : #000000;
-$white : #ffffff;
-$minRadius : 5px;
-$maxRadius : 20px;
+*{
+    background-color: var(--backColor);
+    color: var(--fontColor1);
+}
+
+.col-md-6{
+    padding: 0px;
+}
 
 // lablels input
 .form-group{
@@ -14,11 +15,11 @@ $maxRadius : 20px;
 .input{
     padding: 10px;
     border: none;
-    border-radius: $minRadius;
+    border-radius: var(--minRadius);
     font : inherit;
-    color: $blue;
-    background-color: transparent;
-    outline: 2px solid $blue;
+    color: var(--blue);
+    background-color: var(--backColor);
+    outline: 2px solid var(--blue);
 }
 
 .input-label{
@@ -32,19 +33,19 @@ $maxRadius : 20px;
 .input:focus+.input-label,
 .input:valid+.input-label{
     transform: translate(10px,-14px) scale(.8);
-    color: $orange;
+    color: var(--orange);
     padding-inline: 5px;
-    background-color: white;
+    background-color: var(--backColor);
 }
 
 .input:is(:focus,:valid){
-    outline-color: $orange;
+    outline-color: var(--orange);
 }
 
 
 //input se souvenir
 
-#checkbox{
+#souv{
     display: none;
 }
 
@@ -52,7 +53,7 @@ $maxRadius : 20px;
     display: block;
     width: 60px;
     height: 30px;
-    border:  2px solid $blue;
+    border:  2px solid var(--blue);
     border-radius: 30px;
     position: relative;
     cursor: pointer;
@@ -69,16 +70,16 @@ $maxRadius : 20px;
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: $blue;
+    background-color: var(--blue);
     border-radius: 50%;
     left: 1px;
     z-index: 10;
     transition: transform .5s ease-in-out;
 }
 
-#checkbox:checked + .ball{
+#souv:checked + .ball{
     transform: translate(29px,-50%);
-    background-color: $orange;
+    background-color: var(--orange);
 }
 
 .souv{

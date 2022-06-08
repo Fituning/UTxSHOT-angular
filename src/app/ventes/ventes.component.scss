@@ -1,10 +1,4 @@
-$darkBlue : #0C0C5D ;
-$blue : #2221a3;
-$orange : #e87100;
-$black : #000000;
-$white : #ffffff;
-$minRadius : 10px;
-$maxRadius : 20px;
+
 
 .body-section{
 
@@ -21,7 +15,7 @@ $maxRadius : 20px;
 
     box-sizing: border-box;
 
-    color: $blue;
+    color: var(--blue);
 }
 
 .filtres-section{
@@ -45,10 +39,10 @@ $maxRadius : 20px;
     padding-top: 5.5em;
     min-height: 100%;
 
-    color: $white;
-    box-shadow: 2px 0px 8px 1px $black ;
+    color: var(--white);
+    box-shadow: 2px 0px 8px 1px var(--shadow );
 
-    background: linear-gradient($blue, $darkBlue);
+    background: linear-gradient(var(--blue), var(--darkBlue));
 }
 
 .Vente-section{
@@ -60,7 +54,7 @@ $maxRadius : 20px;
     align-items: flex-start;
     justify-content:space-around;
 
-    background-color: white;
+    background-color: var(--backColor);
 
     box-sizing: border-box;
     width: 90%;
@@ -69,7 +63,7 @@ $maxRadius : 20px;
     padding-top: 5em;
     height: 100%;
 
-    color: $blue;
+    color: var(--blue);
 }
 
 .filtre-btn{
@@ -81,17 +75,17 @@ $maxRadius : 20px;
     
     width: 100%;
     background: none;
-    color: $white;
+    color: var(--white);
 
     
 }
 
 .filtre{
 
-    border-top: solid 1px $orange;
+    border-top: solid 1px var(--orange);
     width: 100%;
     color: white;
     font-style: normal;
-    background: linear-gradient($blue, $darkBlue);
+    background: linear-gradient(var(--blue), var(--darkBlue));
 }
 

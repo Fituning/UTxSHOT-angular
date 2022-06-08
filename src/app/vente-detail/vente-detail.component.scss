@@ -1,10 +1,4 @@
-$darkBlue : #0C0C5D ;
-$blue : #2221a3;
-$orange : #e87100;
-$black : #000000;
-$white : #ffffff;
-$minRadius : 10px;
-$maxRadius : 20px;
+
 *{
     color: #000000;
 }
@@ -26,14 +20,14 @@ $maxRadius : 20px;
     justify-content: flex-start;
     align-items: center;
 
-    background-color: $white;
+    background-color: var(--backColor);
     width: 80%;
     min-height: 35em;
-    box-shadow: 0px -2px 12px 2px $black ;
+    box-shadow: 0px -2px 12px 2px var(--shadow) ;
 
 }
 
 img{
-    max-width: 15em;
-    max-height: 15em;
+    max-width: 25em;
+    max-height: 25em;
 }

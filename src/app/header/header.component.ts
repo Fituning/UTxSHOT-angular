@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  darkTheme : boolean;
+
+  constructor() {
+    this.darkTheme = false
+   }
 
   ngOnInit(): void {
   }
 
+  changeColor(){
+    if(this.darkTheme){
+      document.body.removeAttribute('data-theme');
+      this.darkTheme = false;
+    }else{
+      document.body.setAttribute('data-theme', 'dark')
+      this.darkTheme = true;
+    }
+  } 
 }

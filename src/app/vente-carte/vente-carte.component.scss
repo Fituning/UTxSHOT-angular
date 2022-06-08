@@ -1,10 +1,3 @@
-$darkBlue : #0C0C5D ;
-$blue : #2221a3;
-$orange : #e87100;
-$black : #000000;
-$white : #ffffff;
-$minRadius : 10px;
-$maxRadius : 20px;
 
 .card{
     display: flex;
@@ -19,23 +12,23 @@ $maxRadius : 20px;
     padding: 0px;
 
     box-sizing: border-box;
+    background-color: var(--backColor);
+    border: solid 2px var(--blue);
+    border-radius: var(--maxRadius);
 
-    border: solid 2px $blue;
-    border-radius: $maxRadius;
-
-    color: $blue;
-    box-shadow: 1px -1px 8px $black ;
+    color: var(--fontColor1);
+    box-shadow: 1px -1px 8px var(--shadow) ;
 
     padding-top: 0.5em;
 
     &:hover{
-        border-color: $orange;
+        border-color: var(--orange);
     }
 }
 
 .titre{
     font-size: 1.5em;
-    color: $black;
+    color: var(--fontColor1);
 }
 
 
@@ -69,7 +62,7 @@ img{
 
     width: 100%;
     max-height: 4em;
-    border-bottom: solid 2px $orange;
+    border-bottom: solid 2px var(--orange);
     overflow: hidden;
 }
 
@@ -83,7 +76,7 @@ img{
 
     width: 100%;
     max-height: 6.5em;
-    border-bottom: double 2px $blue;
+    border-bottom: double 2px var(--blue);
     overflow: auto;
 }
 
@@ -96,7 +89,7 @@ img{
 
     width: 100%;
     max-height: 5.5em;
-    border-bottom: double 2px $blue;
+    border-bottom: double 2px var(--blue);
 }
 
 .vendeur{
@@ -118,7 +111,7 @@ img{
 .prix{
     font-weight: bold;
     font-size: 2em;
-    color: $orange;
+    color: var(--fontColor3);
 }
 
 p{

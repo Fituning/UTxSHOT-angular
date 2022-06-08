@@ -1,23 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
-$darkBlue : #0C0C5D ;
-$blue : #2221a3;
-$orange : #e87100;
-$black : #000000;
-$white : #ffffff;
+:root{
+    --headPrincipal: #0C0C5D;
+    --headSecond : #2221a3 ;
+    --backColor : #ffffff;
+    --darkBlue : #0C0C5D ;
+    --blue : #2221a3;
+    --orange : #e87100;
+    --black : #000000;
+    --white : #ffffff;
+    --shadow : #000000;
+    --fontColor1: #000000;
+    --fontColor2 : #ffffff;
+    --fontColor3 : #e87100;
+    --butonCback1 : #2221a3 ;
+    --butonCback2: #e87100;
+    --butonCborder: #2221a3;
+
+    --minRadius : 10px;
+    --maxRadius : 20px;
+}
+
+[data-theme="dark"]{
+    --headPrincipal: #0C0C5D;
+    --headSecond : #e87100 ;
+    --backColor : #0C0C5D;
+    --darkBlue : #e87100 ;
+    --blue : #cd5003;
+    --orange : #2221a3;
+    --black : #000000;
+    --white : #ffffff;
+    --shadow : #000000;
+    --fontColor1: #ffffff;
+    --fontColor2 : #000000;
+    --fontColor3 : #e87100;
+    --butonCback1 : #2221a3 ;
+    --butonCback2: #e87100;
+    --butonCborder: #2221a3;
+}
+
+
+// [data-theme="dark"] {
+//     --darkBlue : #cd5003 ;
+//     --blue : #e87100;
+//     --orange : #2221a3;
+//     --black : #ffffff;
+//     --white : #000000;
+// }
+
 
 body::-webkit-scrollbar {
     width: 10px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-    background: $orange; /* color of the tracking area */
+    background: var(--orange); /* color of the tracking area */
     margin-top: 200%;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $darkBlue ; /* color of the scroll thumb */
+    background-color: var(--darkBlue ); /* color of the scroll thumb */
     border-radius: 3px; /* roundness of the scroll thumb */
-    border: 1px solid $orange; /* creates padding around scroll thumb */
+    border: 1px solid var(--orange); /* creates padding around scroll thumb */
 }
 
 

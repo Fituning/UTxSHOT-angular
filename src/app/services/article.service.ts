@@ -24,7 +24,7 @@ export class ArticleService {
                       false,
                       48,
                       32.52,
-                      ["../../assets/files/img/81W19bSDF2S._AC_SL1500_.jpg","../../assets/files/img/images.jpg"]
+                      ["../../assets/files/img/logo_UTxShot1.png","../../assets/files/img/logo_UTxShot2.png"]
                     ))
     this.Array.push(new Article(1,
                     "x-shot sniper",
@@ -38,7 +38,7 @@ export class ArticleService {
                     true,
                     48,
                     14.98,
-                    ["../../assets/files/img/images.jpg","../../assets/files/img/images.jpg","../../assets/files/img/images.jpg","../../assets/files/img/images.jpg"]
+                    ["../../assets/files/img/81W19bSDF2S._AC_SL1500_.jpg","../../assets/files/img/images.jpg","../../assets/files/img/F886898A_1.jpg","../../assets/files/img/GUEST_28b8b087-a318-47c7-8c1a-cfd5ade93de6.jpg"]
                   ))
     return this.Array
   }
