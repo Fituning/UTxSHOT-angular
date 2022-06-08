@@ -42,7 +42,7 @@
 
     font-size: auto;
     background-color: var(--white);
-    color : var(--black);
+    color : var(--fontColor1);
 
     border-right :solid 1px var(--black);
     border-top : solid 2px var(--butonCborder);
@@ -66,7 +66,7 @@
     
     font-size: auto;
     background-color: var(--white);
-    color : var(--black);
+    color : var(--fontColor1);
 
     border : 0px;
     border-top : solid 2px var(--butonCborder);
@@ -102,7 +102,7 @@
     width: 100%;
     background-color: var(--headPrincipal);
     border-bottom: solid 2px var(--headSecond);
-    box-shadow: var(--shadow);
+    box-shadow: 8.7em 0px 6px var(--shadow);
 }
 
 .sdiv{
@@ -135,6 +135,8 @@
     border-bottom-right-radius: var(--maxRadius);
 
     padding: 0.3em;
+
+    box-shadow: 0px 5px 6px -3px var(--shadow);
 }
 
 img{
@@ -151,8 +153,8 @@ input{
 }
 
 button{
-    background-color: var(--butonCback2);
-    color : var(--black);
+    background-color: var(--butonCback1);
+    color : var(--fontColor1);
     border : solid 1px var(--butonCborder);
     border-radius: var(--minRadius);
     min-width: 10%;
@@ -167,7 +169,7 @@ button{
 
 .login-btn{
     background-color: var(--butonCback1);
-    color : var(--white);
+    color : var(--fontColor1);
     border : solid 0px var(--blue);
     border-radius: var(--minRadius);
     min-width: 60%;

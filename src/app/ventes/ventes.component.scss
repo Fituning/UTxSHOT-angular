@@ -42,7 +42,7 @@
     color: var(--white);
     box-shadow: 2px 0px 8px 1px var(--shadow );
 
-    background: linear-gradient(var(--blue), var(--darkBlue));
+    background: linear-gradient(var(--degradeColor), var(--headPrincipal));
 }
 
 .Vente-section{
@@ -75,17 +75,17 @@
     
     width: 100%;
     background: none;
-    color: var(--white);
+    color: var(--fontColor1);
 
     
 }
 
 .filtre{
 
-    border-top: solid 1px var(--orange);
+    border-top: solid 1px var(--butonCback1 );
     width: 100%;
-    color: white;
+    color: var(--fontColor1);
     font-style: normal;
-    background: linear-gradient(var(--blue), var(--darkBlue));
+    background: linear-gradient(var(--degradeColor), var(--headPrincipal));
 }
 
