@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   darkTheme : boolean;
 
   constructor() {
-    this.darkTheme = false
+    this.darkTheme = false;
    }
 
   ngOnInit(): void {

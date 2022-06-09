@@ -41,14 +41,9 @@
     --butonCborder: #0b2b80;
 }
 
-
-// [data-theme="dark"] {
-//     --darkBlue : #cd5003 ;
-//     --blue : #de6600;
-//     --orange : #0b2b80;
-//     --black : #ebd9c8;
-//     --white : #444c4e;
-// }
+body{
+    color: var(--fontColor1);
+}
 
 
 body::-webkit-scrollbar {

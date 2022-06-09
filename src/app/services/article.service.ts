@@ -40,7 +40,6 @@ export class ArticleService {
     this.Array.push(new Article(0,"x-shot bateuse",new Date(),/*new Vendeur(),*/60,14,false,32,"correct",false,48,32.52,["../../assets/files/img/logo_UTxShot1.png","../../assets/files/img/logo_UTxShot2.png"]))
     this.Array.push(new Article(0,"x-shot bateuse",new Date(),/*new Vendeur(),*/60,14,false,32,"correct",false,48,32.52,["../../assets/files/img/logo_UTxShot1.png","../../assets/files/img/logo_UTxShot2.png"]))
     this.Array.push(new Article(0,"x-shot bateuse",new Date(),/*new Vendeur(),*/60,14,false,32,"correct",false,48,32.52,["../../assets/files/img/logo_UTxShot1.png","../../assets/files/img/logo_UTxShot2.png"]))
-    this.Array.push(new Article(0,"x-shot bateuse",new Date(),/*new Vendeur(),*/60,14,false,32,"correct",false,48,32.52,["../../assets/files/img/logo_UTxShot1.png","../../assets/files/img/logo_UTxShot2.png"]))
     return this.Array
   }
 
