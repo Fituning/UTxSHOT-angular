@@ -15,6 +15,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { ArticleService } from './services/article.service';
 import { VenteDetailComponent } from './vente-detail/vente-detail.component';
+import { FormVenteComponent } from './form-vente/form-vente.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { VenteDetailComponent } from './vente-detail/vente-detail.component';
     PartiesComponent,
     InscriptionComponent,
     ConnectionComponent,
-    VenteDetailComponent
+    VenteDetailComponent,
+    FormVenteComponent
   ],
   imports: [
     BrowserModule,
