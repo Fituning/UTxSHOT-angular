@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngulareFirestoreModule} from 'angularfire2/firestore'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +19,7 @@ import { ConnectionComponent } from './connection/connection.component';
 import { ArticleService } from './services/article.service';
 import { VenteDetailComponent } from './vente-detail/vente-detail.component';
 import { FormVenteComponent } from './form-vente/form-vente.component';
+
 
 @NgModule({
   declarations: [
