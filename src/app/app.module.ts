@@ -19,7 +19,6 @@ import { ConnectionComponent } from './connection/connection.component';
 import { ArticleService } from './services/article.service';
 import { VenteDetailComponent } from './vente-detail/vente-detail.component';
 import { FormVenteComponent } from './form-vente/form-vente.component';
-import { ProfilComponent } from './profil/profil.component';
 
 
 @NgModule({
@@ -36,8 +35,7 @@ import { ProfilComponent } from './profil/profil.component';
     InscriptionComponent,
     ConnectionComponent,
     VenteDetailComponent,
-    FormVenteComponent,
-    ProfilComponent
+    FormVenteComponent
   ],
   imports: [
     BrowserModule,
