@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
-//import { AngularFireModule } from 'angularfire2';
-//import { AngulareFirestoreModule} from 'angularfire2/firestore';
+import { AngularFireModule } from 'angularfire2';
+import { AngulareFirestoreModule} from 'angularfire2/firestore'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
