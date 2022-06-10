@@ -1,14 +1,5 @@
 {
   "projects": {
     "default": "utxshot"
-  },
-  "targets": {
-    "utxshot": {
-      "hosting": {
-        "UTxSHOT": [
-          "utxshot"
-        ]
-      }
-    }
   }
 }
